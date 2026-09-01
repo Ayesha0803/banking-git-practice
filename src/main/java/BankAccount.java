@@ -4,4 +4,12 @@ public class BankAccount {
     private String accountHolder;
     private double balance;
 
+    public String deposit(double amount){
+        if(amount<=0)
+            return "Invalid deposit amount";
+
+        balance=balance+amount;
+        return "Account balance :" + balance;
+    }
+
 }
